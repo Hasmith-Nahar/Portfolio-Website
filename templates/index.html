@@ -1,0 +1,149 @@
+{% include "header.html" %}
+
+  <!-- Title -->
+
+  <section id="title">
+    <div class="container">
+
+      <div class="green-circle title-circle">
+        <h1 class="main-title">I'm Hasmith</h1>
+        <h4>A student from class 11</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About/welcome -->
+
+  <section id="welcome" class="grey-box">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-6 welcome-text">
+          <h3 class="white-heading">Hi there</h3>
+          <p>My primary areas of interest are in the fields of coding.
+            Increasingly, I am interested in the application of
+            Python coding to understand how does it work in real life. <br><br>
+            Having studied Python Language through online Bootcanp, I have an
+            interdisciplinary approach to problem solving. I am looking
+            forward to beginning a early stage start-up intern from abroad
+            remotely . <br><br>
+          </p>
+        </div>
+        <div class="col-lg-6 welcome-pic">
+            <img src="{{url_for('static', filename='images/profilepic.JPG')}}" alt="Hasmith-profile" id="profile-pic">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contents/info/cv+portfolio -->
+
+  <section id="info">
+    <div class="container-fluid">
+
+      <div class="row info">
+
+        <div class="col-lg-6 show-cv-above">
+          <a href="{{url_for('static', filename='cvs/Resume.pdf')}}" target="_blank" rel="noopener noreferrer">
+            <div class="grey-box bubble info-block">
+              <div class="green-circle info-circle">
+                <h2 class="bubble-text cv white-heading">My CV</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="white-box info-block">
+            <h3 class="grey-title">Coding</h3>
+            <p>Driven by my enthusiasm for the natural world, I am continuing to further my understanding in Coding,
+              language through my online courses, dummy projects. Check out my CV to read more
+              about some of the theoretical knowledge and practical skills I have gained through this work.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 show-cv-below">
+          <a href="{{url_for('static', filename='cvs/Resume.pdf')}}" target="_blank" rel="noopener noreferrer">
+            <div class="grey-box bubble info-block">
+              <div class="green-circle info-circle">
+                <h2 class="bubble-text cv white-heading">My CV</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row info lower-info">
+
+        <div class="col-lg-6">
+          <div class="white-box info-block">
+            <h3 class="grey-title">Data Science</h3>
+            <p>My interest in data science was sparked whilst completing my 10th Std SSC Board exam.
+              Since then I have been developing my computational skills in various languages;
+              I hope to apply this knowledge to understanding the complex data of the natural world.
+              My portfolio contains some light-hearted projects I've been working on.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <a href="{{url_for('portfolio')}}">
+            <div class="grey-box bubble info-block">
+              <div class="green-circle info-circle">
+                <h2 class="bubble-text portfolio white-heading">Portfolio</h2>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row info">
+        <div class="white-box info-block tutor-block">
+            <h3 class="grey-title">Learning</h3>
+            <p>Since the summer of 2020 I have been Learning Coding and some English online courses.
+              I love to share my enthusiasm for Coding with others and make my lessons engaging and interactive.
+              If you’d like to hear more then do <a href="{{url_for('home')}}#contact" style="color: #a9bf04">get in touch</a>!</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact me -->
+
+  <section id="contact">
+
+    <div id="f1_container">
+      <div id="f1_card">
+
+        <div class="front face">
+          <div class="green-circle contact-circle shadow">
+            <h2 class="contact-title hide">Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="back face center">
+          <div class="green-circle contact-circle shadow">
+            <div class="contact-text">
+
+              <div class="popup" onclick="popupFunc()">
+                <p onclick="copyEmail()" class="show-email-text">hnahar2311@gmail.com</p>
+                <p onclick="copyEmail()" class="show-email" id="HiddenEmail">Email</p>
+                <span class="popuptext" id="myPopup">Copied to Clipboard</span>
+              </div>
+
+              <p><a href="https://www.linkedin.com/in/Hasmith-Nahar" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+              <p><a href="https://github.com/Hasmith-Nahar" target="_blank" rel="noopener noreferrer">GitHub </a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+{% include "footer.html" %}
