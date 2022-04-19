@@ -1,0 +1,577 @@
+/* Text */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #545454
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: #141414;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+  line-height: 1.5;
+  margin-top: 30%;
+  margin-bottom: 0;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  position: relative;
+  font-size: 3rem;
+  padding-bottom: 5%;
+  font-size: 3.5rem;
+  width: 150%;
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #545454;
+  padding-bottom: 3%;
+}
+
+h3:hover {
+  color: #a9bf04;
+}
+
+h4 {
+  position: relative;
+  font-size: 2.05rem;
+  width: 110%;
+  right: 5%;
+}
+
+p {
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+
+.white-heading {
+  color: #ffffff;
+}
+
+.welcome-text {
+  text-align: left;
+}
+
+.bubble-text {
+  right: 23%;
+  top: 27%;
+}
+
+.portfolio {
+  right: 30%;
+}
+
+.contact-title {
+  margin-top: 40%;
+  right: 24%;
+}
+
+.contact-text {
+  padding-top: 22%;
+}
+
+.contact-text p {
+  position: relative;
+  text-align: center;
+  line-height: 5;
+}
+.contact-text p:hover {
+  color: #a9bf04;
+  cursor: pointer;
+}
+
+.contact-text a {
+  color: #545454;
+}
+.contact-text a:hover {
+  color: #a9bf04;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Logo */
+
+.logo {
+  height: 60px;
+  width:60px;
+ }
+
+
+/* Photo */
+
+.welcome-pic {
+  display: flex;
+  justify-content: center;
+}
+
+#profile-pic {
+  position: relative;
+  width: 80%;
+  border-radius: 50%;
+  border: 7px solid #a9bf04;
+  margin: auto;
+}
+
+
+/* Navbar */
+/*!
+ * Start Bootstrap - Clean Blog v5.0.9 (https://startbootstrap.com/themes/clean-blog)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
+ */
+#mainNav {
+  position: absolute;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+#mainNav .navbar-nav > li.nav-item > a {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  padding: 10px 10px;
+  color: #141414;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+  color: #a9bf04;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    border-bottom: 1px solid transparent;
+    background: transparent;
+    transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+  }
+  #mainNav.is-fixed {
+    /* when the user scrolls down, hide the header right above the viewport */
+    position: fixed;
+    top: -90px;
+    transition: transform 0.2s;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+
+/* Containers */
+
+.container-fluid {
+  padding: 10% 10%;
+}
+
+.grey-box{
+  background-color: #545454;
+  color: #ffffff
+}
+
+.bubble {
+  border-radius: 5%;
+  padding: 10%;
+}
+
+.bubble:hover {
+  background-color: #a9bf04;
+  cursor: pointer;
+}
+
+.white-box {
+  margin: 5% auto;
+}
+
+.lower-info {
+  padding-top: 10%;
+}
+
+#info .col-lg-6 {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.tutor-block {
+  padding-top: 5%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.container-fluid.copyright-strip {
+  padding: 1%;
+}
+
+
+/* Green circles */
+
+.green-circle {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #a9bf04;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.title-circle {
+  width: 45%;
+  padding-bottom: 43%;
+  margin: 2.5% auto;
+  border-width: 10px;
+  margin-bottom: 10%;
+}
+
+/* Glow title circle?
+.title-circle:hover {
+  box-shadow: 0 0 30px #EAFF50;
+}
+*/
+
+.contact-circle {
+  width: 80%;
+  padding-bottom: 78%;
+  border-width: 10px;
+  margin-bottom: 10%;
+  background-color: white;
+}
+
+/* Info section specific */
+
+#info {
+  padding-top: 3%;
+}
+
+.show-cv-above {
+  display: block;
+}
+.show-cv-below {
+  display: none;
+}
+
+
+/* Contact section specific */
+#contact .container-fluid{
+  padding: 1% 10%;
+}
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.face.back {
+  transform: rotateY(180deg);
+  z-index: 4;
+  frontface-visibility: hidden;
+}
+
+/* Popup container - when email copied to clipboard */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #545454;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 85%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #545454 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.show-email-text {
+  display: block;
+}
+.show-email {
+  display: none;
+}
+
+
+/* Responsive - smaller laptop */
+
+@media (max-width: 992px) {
+/* This will change when viewport is 992px or less */
+  .container-fluid {
+    padding: 10% 25%;
+  }
+  .title-circle {
+    width: 55%;
+    padding-bottom: 52%;
+    margin: 15% auto;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 30%;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.55rem;
+    width: 110%;
+    right: 4.7%;
+  }
+  #profile-pic {
+    width: 60%;
+    margin-top: 5%;
+  }
+  .show-cv-below {
+    display: block;
+  }
+  .show-cv-above {
+    display: none;
+  }
+  .lower-info {
+    padding-top: 0;
+  }
+  .info-block {
+    margin: 10% auto;
+  }
+  .info-circle {
+    height: 160px;
+    width: 160px;
+  }
+  .bubble-text {
+    right: 23%;
+    top: 31%;
+  }
+  .portfolio {
+    right: 28%;
+  }
+  .contact-circle {
+    width: 70%;
+    padding-bottom: 68%;
+  }
+  .tutor-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Responsive - tablet */
+
+@media (max-width: 768px) {
+  .title-circle {
+    width: 70%;
+    padding-bottom: 67%;
+    margin: 18% auto;
+  }
+  .contact-circle {
+    width: 60%;
+    padding-bottom: 58%;
+  }
+  .contact-text {
+    padding-top: 15%;
+  }
+}
+
+/* Responsive - small tablet/landscape mobile */
+
+@media (max-width: 565px) {
+  .container-fluid {
+    padding: 25% 20%;
+  }
+  .title-circle {
+    margin: 20% auto;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    padding-bottom: 10%;
+  }
+  h4 {
+    font-size: 1.35rem;
+    width: 130%;
+    right: 14.5%;
+  }
+  #profile-pic {
+    width: 75%;
+    margin-top: 10%;
+  }
+}
+
+/* Responsive -  mobile */
+
+@media (max-width: 490px) {
+  .title-circle {
+    width: 80%;
+    padding-bottom: 75%;
+    margin: 30% auto;
+  }
+  h1 {
+    font-size: 3.6rem;
+    width: 120%;
+    right: 9%;
+    letter-spacing: 0.4rem;
+    margin-top: 27%;
+  }
+  h4 {
+    font-size: 1.3rem;
+    width: 120%;
+    right: 9.5%;
+  }
+  #f1_container {
+    width: 350px;
+    height: 350px;
+  }
+  .contact-circle {
+    width: 85%;
+    padding-bottom: 80%;
+  }
+  .container-fluid.copyright-strip {
+    margin-top: 20%;
+  }
+}
+
+/* Responsive - mobile SMALLEST */
+
+@media (max-width: 400px) {
+  .title-circle {
+    width: 80%;
+    padding-bottom: 75%;
+    margin: 60% auto;
+  }
+  h1 {
+    font-size: 2.3rem;
+    width: 120%;
+    right: 7.5%;
+    letter-spacing: 0.4rem;
+    margin-top: 33%;
+  }
+  h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.05rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  #profile-pic {
+    width: 90%;
+    margin-top: 10%;
+  }
+  .info-circle {
+    height: 130px;
+    width: 130px;
+  }
+  .bubble-text {
+    top: 35%;
+  }
+  .portfolio {
+    right: 22%;
+  }
+  #f1_container {
+    margin: 10px auto;
+    width: 220px;
+    height: 220px;
+  }
+  .contact-circle {
+    width: 85%;
+    padding-bottom: 80%;
+  }
+  .contact-title {
+    margin-top: 40%;
+  }
+  .contact-text {
+    padding-top: 15%;
+  }
+  .contact-text p {
+    line-height: 3;
+  }
+  .show-email-text {
+    display: none;
+  }
+  .show-email {
+    display: block;
+  }
+  .container-fluid.copyright-strip {
+    margin-top: 30%;
+  }
+}
